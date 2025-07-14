@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox -form- grid -layout</title>
+    <style>
+.container {
+    border:2px solid salmon;
+    display:flex;
+   /* justify-content: space-around;*/
+     height:250px;
+    align-items: center;
+    /*flex-direction: row-reverse;*/
+    flex-wrap: wrap;
+}
+.box {
+    border:2px dashed tomato;
+    width: 50px;
+    height:50px;
+
+
+
+}
+
+
+    </style>
+    
+    <style>
+        nav{
+            display:flex;
+            justify-content: center;
+        }
+        nav a{
+            text-decoration:dashed;
+            color: blue;
+            
+        }
+        .login-form{
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            border: 2px solid blanchedalmond;
+        }
+        .login-form input{
+            margin-top: 20px;
+        }
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            border: 2px solid tan;
+
+
+        }
+    </style>
+    <style>
+        .contain{
+            display:grid;
+           /* grid-template-columns:repeat(2,100px);*/
+            grid-template-columns: 100px 100px ;
+            /*grid-template-columns: repeat(6, 1fr) 2fr;*/
+            justify-content: center;
+            justify-items: center;
+            row-gap: 2px;
+            
+        }
+        .item{
+            border:2px solid rgb(193, 18, 18)
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox layout</h1>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box3</div>
+    </div>
+    <nav>
+        <div>
+        <a href="">home</a>
+        <a href="">bolg</a>
+        <a href="">profile</a>
+        <a href="">about</a>
+        </div>
+        <a href="">login</a>
+    </nav>
+  <section class="login-form-container">
+    <form class="login-form">
+         <h3>please login</h3>
+    <input type="your email" name="" id="" placeholder="your email" required>
+    <input type="your email" name="" id="" placeholder="your email" required>
+    <input type="your email" name="" id="" placeholder="your email" required>
+    <input type="submit" value="login">
+
+    </form>
+</section>
+   </form>
+
+
+   <section>
+    <h2> explore grid layout 2d layout</h2>
+<div class="contain">
+    <div class="item">item - 1</div>
+    <div class="item">item - 2</div>
+    <div class="item">item - 3</div>
+    <div class="item">item - 4</div>
+    <div class="item">item - 5</div>
+    <div class="item">item - 6</div>
+    <div class="item">item - 7</div>
+    <div class="item">item - 8</div>
+    <div class="item">item - 9</div>
+    <div class="item">item - 10</div>
+    <div class="item">item - 11</div>
+    <div class="item">item - 12</div>
+    <div class="item">item - 13</div>
+    <div class="item">item - 14</div>
+    <div class="item">item - 15</div>
+    <div class="item">item - 16</div>
+    <div class="item">item - 17</div>
+    <div class="item">item - 18</div>
+    <div class="item">item - 19</div>
+    <div class="item">item - 20</div>
+
+</div>
+</section>
+</body>
+</html>
