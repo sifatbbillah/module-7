@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE WEEBSITE</title>
+    <style>
+        body{
+            border: 5px solid rgb(217, 12, 70);
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .img-container{
+            display: flex;
+        }
+        .img-container div{
+            width:50%;
+        }
+        .img-container img{
+            width:90%;
+        }
+        @media screen and ( max-width:576px){
+            .img-container{
+                flex-direction:column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RESPONSIVE WEEBSITE</h1>
+        <ol>
+        <li>viewport metatag</li>
+        <li>css relative unit</li>
+        <li>body max width horizontal center aling </li>
+        <li> image fluid</li>
+        <li> two colum felx and use media querry with flrx</li>
+        <li> multi colum with grid layout </li>
+        <li>responsive with java script</li>
+        </ol>
+    </header>
+    <main>
+        <div class="img-container">
+            <div><img src="p6.jpg" alt=""></div>
+            <div><img src="p6.jpg" alt=""></div>
+        </div>
+        
+
+    </main>
+</body>
+</html>
